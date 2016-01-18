@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1573890596</fileChecksum>
+  <configuration>
+    <name>Flash Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\app\usb_hooks.c</file>
+      <file>$PROJ_DIR$\app\usb_cnfg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_6_8x6.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_6_8x6.__cstat.et</file>
+      <file>$PROJ_DIR$\board\arm_comm.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cd_class.__cstat.et</file>
+      <file>$PROJ_DIR$\app\cdc_cmd.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cursor_arrow.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\uart.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\iar_logo.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\main.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\uart.__cstat.et</file>
+      <file>$PROJ_DIR$\app\usb_hooks.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\lamp_off.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_hw.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\app\cdc_desc.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_hooks.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_buffer.o</file>
+      <file>$PROJ_DIR$\app\usb_dev_desc.h</file>
+      <file>$PROJ_DIR$\app\includes.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\sdram_64M_32bit_drv.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_touch_scr.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_buffer.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_dev_desc.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_glcd.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_18_24x12.__cstat.et</file>
+      <file>$PROJ_DIR$\modules\sdram_64M_32bit_drv.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cursor_arrow.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\m4t_tl.a</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\sys.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_buffer.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\lamp_on.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\button_settings.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_glcd.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\VirtualCom.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$PROJ_DIR$\app\uart.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\algo.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\button_settings.o</file>
+      <file>$PROJ_DIR$\modules\usb_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_dev_desc.pbi</file>
+      <file>$PROJ_DIR$\board\sys.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\algo.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\iar_logo.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt4t_al.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\modules\usb_hw.h</file>
+      <file>$PROJ_DIR$\config\LPC2478_Flash.icf</file>
+      <file>$TOOLKIT_DIR$\lib\shs_l.a</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_hw.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\sdram_64M_32bit_drv.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_glcd.o</file>
+      <file>$PROJ_DIR$\board\board.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\lamp_on.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc2478.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\gui.__cstat.et</file>
+      <file>$PROJ_DIR$\app\Terminal_6_8x6.c</file>
+      <file>$PROJ_DIR$\app\Terminal_9_12x6.c</file>
+      <file>$PROJ_DIR$\app\algo.c</file>
+      <file>$PROJ_DIR$\app\algo.h</file>
+      <file>$PROJ_DIR$\app\lamp_off.h</file>
+      <file>$PROJ_DIR$\app\lamp_on.c</file>
+      <file>$PROJ_DIR$\modules\drv_glcd.c</file>
+      <file>$PROJ_DIR$\app\cursor_arrow.h</file>
+      <file>$PROJ_DIR$\app\drv_touch_scr.h</file>
+      <file>$PROJ_DIR$\app\lamp_on.h</file>
+      <file>$PROJ_DIR$\board\sys.c</file>
+      <file>$PROJ_DIR$\app\Terminal_18_24x12.c</file>
+      <file>$PROJ_DIR$\app\iar_logo.c</file>
+      <file>$PROJ_DIR$\modules\sdram_64M_32bit_drv.c</file>
+      <file>$PROJ_DIR$\app\button_settings.h</file>
+      <file>$PROJ_DIR$\app\cursor_arrow.c</file>
+      <file>$PROJ_DIR$\app\gui.c</file>
+      <file>$PROJ_DIR$\app\button_settings.c</file>
+      <file>$PROJ_DIR$\app\gui.h</file>
+      <file>$PROJ_DIR$\app\uart.c</file>
+      <file>$PROJ_DIR$\app\drv_touch_scr.c</file>
+      <file>$PROJ_DIR$\app\lamp_off.c</file>
+      <file>$PROJ_DIR$\app\usb_dev_desc.c</file>
+      <file>$PROJ_DIR$\app\cd_class.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Flash Debug\List\virtual_com.map</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_9_12x6.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dl4t_tln.a</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cd_class.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_18_24x12.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_t9.__cstat.et</file>
+      <file>$PROJ_DIR$\modules\usb_buffer.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_t9.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_dev_desc.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\lamp_off.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_t9.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\gui.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\sdram_64M_32bit_drv.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_9_12x6.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\lamp_on.pbi</file>
+      <file>$PROJ_DIR$\app\cd_class.h</file>
+      <file>$PROJ_DIR$\modules\usb_t9.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\sys.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc2470.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cursor_arrow.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\modules\drv_glcd.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_touch_scr.__cstat.et</file>
+      <file>$PROJ_DIR$\app\iar_logo.h</file>
+      <file>$PROJ_DIR$\modules\usb_buffer.c</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_hooks.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_hooks.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_18_24x12.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\algo.__cstat.et</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_6_8x6.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Exe\virtual_com.out</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\Terminal_9_12x6.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\lamp_off.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cd_class.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\usb_hw.pbi</file>
+      <file>$PROJ_DIR$\app\main.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\readme.txt</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\sys.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\modules\usb_hw.c</file>
+      <file>$PROJ_DIR$\app\main.c</file>
+      <file>$PROJ_DIR$\modules\usb_t9.c</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_touch_scr.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\iar_logo.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\gui.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\app\usb_hooks.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 129</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 142 74 3 125 34 96 48 23 140 141 122 16 123 145 120 27 114 54 65 117 105 45 127 77 78 94 6 18 67 4 41 68 8 1 58 116 10 51 73 88 79 84 103 150 49 100 2 57 102 124 113 44 63 11 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 26 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 135 95</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\Terminal_6_8x6.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 134</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3 8 6 125</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\Terminal_9_12x6.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 112</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3 8 6 125</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\algo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84 4 145 3 18 123 8 125 27 6 58 10 88 67 41 68 1 116 51 73 79 103 102 124 113 44 114 63 11 57 2 142 96 54 65 48 117 26 105 23 45 34 127 140 77 74 78 141 94 122 150 49 16 100 120 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 105 116 23 10 45 51 34 127 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\lamp_on.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 8 125 3 79</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_glcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 3 6 145 8 65 123 54 125 103 102 114 56 51 141 94 122 150 68 120 67</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67 3 145 141 122 150 94 102 123 103 114 54 65 6 68 120 11 8 51 125</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\sys.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 6 120 65 68 3 11 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51 65 6 3 68 120 11 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\Terminal_18_24x12.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3 8 6 125</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\iar_logo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 8 125 3 127</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 127 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\sdram_64M_32bit_drv.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 111</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145 6 34 103 3 102 8 120 65 123 141 94 122 150 68 11 67</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67 3 145 141 122 150 94 102 123 103 65 6 68 120 11 8 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\cursor_arrow.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 3 77 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\gui.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 152</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67 27 79 3 18 123 68 51 103 44 114 63 11 8 41 1 116 73 102 145 124 113 125 57 4 6 58 10 88 84 142 96 54 65 48 117 26 105 23 45 34 127 140 77 74 78 141 94 122 150 49 16 100 120 2 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_settings.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 8 125 3 84</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 84 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\uart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140 48 96 23 3 141 122 16 123 145 120 27 117 142 125 26 34 74 94 6 114 54 65 105 45 127 77 78 150 49 100 68 57 67 4 41 8 1 58 18 116 10 51 73 88 79 84 103 102 124 113 44 63 11 2 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 105 116 23 10 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\drv_touch_scr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 6 58 3 4 8 10 145 27 67 41 68 1 18 125 84 123 142 114 96 54 65 48 116 51 73 79 103 102 124 113 44 63 11 21 78 117 26 105 23 45 34 127 140 77 74 141 94 122 150 49 16 100 120 2 57</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\lamp_off.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 137</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 8 125 3 74</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 125 8 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\usb_dev_desc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127 113 65 3 114 105 78 54 117 45 77 123 102 145 124 27 142 96 125 48 26 23 34 140 74 44 63 11 8 67 4 41 6 68 1 58 18 116 10 51 73 88 79 84 103 2 57 141 94 122 150 49 16 100 120 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\cd_class.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 27 114 49 3 105 65 127 100 145 54 117 45 77 123 94 150 68 48 116 142 96 125 26 23 34 140 74 141 122 16 120 6 2 57 8 67 4 41 1 58 18 10 51 73 88 79 84 103 102 124 113 44 63 11 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 116 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 105 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\usb_buffer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 116 3 1 73 100 145 67 68 18 51 79 103 49 27 4 6 8 58 10 125 88 84 94 150 48 65 105 142 114 96 54 117 26 23 45 34 127 140 77 74 78 123 141 122 16 120 2 57 102 124 113 44 63 11 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 105 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Flash Debug\Exe\virtual_com.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 95</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 59 52 47 138 121 64 29 152 53 137 39 15 62 118 132 134 136 13 25 107 129 20 109 60 55 36 98</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\usb_hw.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145 6 27 10 125 3 58 88 8 57 4 18 84 123 67 41 68 1 116 51 73 79 103 102 124 113 44 114 63 11 142 96 54 65 48 117 26 105 23 45 34 127 140 77 74 78 141 94 122 150 49 16 100 120 2 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 117 18 26 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 117 18 26 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\usb_t9.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 77 3 117 145 27 54 45 123 94 150 68 114 65 105 127 78 49 100 142 96 125 48 26 23 34 140 74 141 122 16 120 6 57 67 4 41 1 58 18 116 10 51 73 88 79 84 103 102 124 113 44 63 11 2 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 27 67 3 145 141 122 150 94 102 123 103 142 124 4 113 49 100 114 16 44 63 41 96 6 54 68 120 11 125 8 65 1 48 58 18 26 105 116 23 10 45 51 34 127 73 2 21 57 140 88 77 79 74 84 78</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>SDRAM Debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

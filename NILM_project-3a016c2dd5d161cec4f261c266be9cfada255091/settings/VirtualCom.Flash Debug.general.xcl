@@ -1,0 +1,17 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armjlink2.dll" 
+
+"C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\Flash Debug\Exe\virtual_com.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\config\debugger\NXP\LPC24xx.dmac" 
+
+--macro "C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\config\lpc2478.mac" 
+
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\config\flashloader\NXP\FlashNXPLPC512K2.board" 
+
+
+
+
