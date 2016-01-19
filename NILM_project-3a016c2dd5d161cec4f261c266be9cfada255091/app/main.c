@@ -1,5 +1,4 @@
-//change now
-//yolo
+//changed here
 
 
 /*************************************************************************
@@ -140,6 +139,7 @@ int main(void)
     int recognized=0;
     int plugOut = 0;
     Flo64 cInterval = 5000;
+    int debug = 0;
     
     // int deviceCnt[3] = {0};
     //AlgoLine_t TestLine;
@@ -271,7 +271,8 @@ int main(void)
     }
     
     // initialize gui
-    gui_monitoringScreen(devProfiles,devLamps);
+    //gui_monitoringScreen(devProfiles,devLamps);
+    gui_mainScreen();
     
     GLCD_SetFont(&Terminal_6_8_6,0x0000FF,0x000cd4ff);
     GLCD_SetWindow(0,0,319,239);
@@ -439,103 +440,127 @@ int main(void)
                 
                 case 0: // 0 = Monitoring screen
                 
-                // Touch logic
-                if(modeButtonState)
-                {
-                    if (cursor_x <= 80 && cursor_y >= 190)
-                    {
-                        gui_toggleMode(devProfiles,devLamps);
-                        break;
-                    }
-                }
-                if(settingsButtonState)
-                {
-                    if (cursor_x >= 239 && cursor_y >= 190)
-                    {
-                        gui_settingsScreen();
-                        break;
-                    }
-                }
+                  // Touch logic
+                  if(modeButtonState)
+                  {
+                      if (cursor_x <= 80 && cursor_y >= 190)
+                      {
+                          gui_toggleMode(devProfiles,devLamps);
+                          break;
+                      }
+                  }
+                  if(settingsButtonState)
+                  {
+                      if (cursor_x >= 239 && cursor_y >= 190)
+                      {
+                          gui_settingsScreen();
+                          break;
+                      }
+                  }
+                  // Back button
+                  if (cursor_x <= 59 && cursor_y <= 59)
+                  {
+                      gui_mainScreen();
+                      break;
+                  }
                 break;
                 case 1: // 1 = Learning screen
-                // Touch logic
-                if(modeButtonState)
-                {
-                    if (cursor_x <= 80 && cursor_y >= 190) //  mode
-                    {
-                        gui_toggleMode(devProfiles,devLamps);
-                        break;
-                    }
-                }
-                if(settingsButtonState)
-                {
-                    if (cursor_x >= 239 && cursor_y >= 190) //  set
-                    {
-                        gui_settingsScreen();
-                        break;
-                    }
-                }
-                if(addDeviceButtonState)
-                {
-                    // add device button placement (80,70,240,120)
-                    if (cursor_x >= 80 && cursor_y >= 70 && cursor_x <= 240 && cursor_y <= 120)
-                    {
-                        addDevice = 1;
-                        
-                        //gui_addDeviceScreen();
-                        break;
-                    }
-                }
+                  // Touch logic
+                  if(modeButtonState)
+                  {
+                      if (cursor_x <= 80 && cursor_y >= 190) //  mode
+                      {
+                          gui_toggleMode(devProfiles,devLamps);
+                          break;
+                      }
+                  }
+                  if(addDeviceButtonState)
+                  {
+                      // add device button placement (80,70,240,120)
+                      if (cursor_x >= 80 && cursor_y >= 70 && cursor_x <= 240 && cursor_y <= 120)
+                      {
+                          addDevice = 1;
+                          
+                          //gui_addDeviceScreen();
+                          break;
+                      }
+                  }
+                  // Back button
+                  if (cursor_x <= 59 && cursor_y <= 59)
+                  {
+                      gui_mainScreen();
+                      break;
+                  }
                 break;
-                case 2: // 2 = Add device screen
-                // Back button
-                if(backButtonState)
-                {
-                    if (cursor_x <= 80 && cursor_y >= 190)
-                    {
-                        gui_learningScreen();
-                        break;
-                    }
-                }
+                case 2: // 2 = Devices screen
+                  // Back button
+                  if (cursor_x <= 59 && cursor_y <= 59)
+                  {
+                      gui_mainScreen();
+                      break;
+                  }
                 break;
-                case 3: // 3: Settings screen
-                // Back button
-                if(backButtonState)
-                {
-                    if (cursor_x <= 80 && cursor_y >= 190)
-                    {
-                        if(gui_getMode())
-                        {
-                            gui_learningScreen();
-                            break;
-                        }
-                        else
-                        {
-                            gui_monitoringScreen(devProfiles,devLamps);
-                            break;
-                        }
-                    }
-                }
-                if(settingsButtonState)
-                {
-                    if (cursor_x >= 239 && cursor_y >= 190)
-                    {
-                        gui_settingsScreen();
-                        break;
-                    }
-                }
+                case 3: // 3: Webserver screen
+                  // Back button
+                  if (cursor_x <= 59 && cursor_y <= 59)
+                  {
+                      gui_mainScreen();
+                      break;
+                  }
                 break;
-                case 4: // 4: Delete Devices screen
-                // Back button
-                if(backButtonState)
-                {
-                    if (cursor_x <= 80 && cursor_y >= 190)
-                    {
-                        gui_learningScreen();
-                        break;
-                    }
-                }
-                
+                case 4: // 4: Inormation Screen
+                  // Back button
+                  if (cursor_x <= 59 && cursor_y <= 59)
+                  {
+                      gui_mainScreen();
+                      break;
+                  }
+                break;
+                case 5: // 5: Settings Screen
+                  // Back button
+                  if (cursor_x <= 59 && cursor_y <= 59)
+                  {
+                      gui_mainScreen();
+                      break;
+                  }
+                break;
+                case 9: // 9: Main Screen
+                  // Monitor Button
+                  if (cursor_x >= 59 && cursor_y >= 64 && cursor_x <= 119 && cursor_y <= 124)
+                  {    
+                      gui_monitoringScreen(devProfiles,devLamps);
+                      break;
+                  }
+                  // Learn Button
+                  else if (cursor_x >= 129 && cursor_y >= 64 && cursor_x <= 189 && cursor_y <= 124)
+                  {
+                      gui_learningScreen();
+                      break;
+                  }
+                  // Devices Button
+                  else if (cursor_x >= 199 && cursor_y >= 64 && cursor_x <= 259 && cursor_y <= 124)
+                  {
+                      gui_devicesScreen();
+                      break;
+                  }
+                  // Server Button
+                  else if (cursor_x >= 59 && cursor_y >= 134 && cursor_x <= 119 && cursor_y <= 194)
+                  {
+                      gui_serverScreen();
+                      break;
+                  }
+                  // Info Button
+                  else if (cursor_x >= 129 && cursor_y >= 134 && cursor_x <= 189 && cursor_y <= 194)
+                  {
+                      gui_infoScreen();
+                      break;
+                  }
+                  // Settings Button
+                  else if (cursor_x >= 199 && cursor_y >= 134 && cursor_x <= 259 && cursor_y <= 194)
+                  {
+                      gui_settingsScreen();
+                      break;
+                  }
                 break;
             }
             USB_H_LINK_LED_FSET = USB_H_LINK_LED_MASK;

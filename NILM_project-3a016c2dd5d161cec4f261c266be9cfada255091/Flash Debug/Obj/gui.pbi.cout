@@ -1,26 +1,26 @@
-"C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\app\gui.c"
+"C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\app\gui.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\app
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\app
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\board
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\board
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\modules
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\modules
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\inc\c
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\app
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\app
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\board
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\board
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\modules
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\modules
 -I
-C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091
+C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091
 -DIAR_LPC_2478_STK=1
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff

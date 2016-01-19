@@ -55,7 +55,14 @@
 #include "cursor_arrow.h"
 #include <lamp_on.h>
 #include <lamp_off.h>
+#include <button_back.h>
+#include <button_devices.h>
+#include <button_info.h>
+#include <button_learn.h>
+#include <button_monitor.h>
+#include <button_server.h>
 #include <button_settings.h>
+
 #include "drv_touch_scr.h"
 
 

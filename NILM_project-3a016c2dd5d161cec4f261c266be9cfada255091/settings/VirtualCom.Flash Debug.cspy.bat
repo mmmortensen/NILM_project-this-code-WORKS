@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.general.xcl" --backend -f "C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.general.xcl" --backend -f "C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Eric\Documents\University of Waterloo\DTU\hands on MCU\NILM_project-algo+UI first merge\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Mikkel\Documents\GitHub\31070version0.9\NILM_project-this-code-WORKS\NILM_project-3a016c2dd5d161cec4f261c266be9cfada255091\settings\VirtualCom.Flash Debug.driver.xcl" 
 
 @echo off 
 :end

@@ -2139,6 +2139,42 @@
       <name>$PROJ_DIR$\app\algo.h</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\app\button_back.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_back.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_devices.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_devices.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_info.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_info.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_learn.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_learn.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_monitor.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_monitor.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_server.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\button_server.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\app\button_settings.c</name>
     </file>
     <file>

@@ -11,8 +11,14 @@ bool settingsButtonState = 1; // enable / disable settings button
 bool backButtonState = 0; // enable / disable back button
 bool addDeviceButtonState = 1; // enable / disable back button
 int screen = 0;
- //
-
+ /* 0 = Monitor mode
+  * 1 = Learning mode
+  * 2 = Devices 
+  * 3 = Web Server
+  * 4 = Information
+  * 5 = Settings
+  * 9 = Main Menu
+  */
 // Get mode
 bool gui_getMode(){return mode;}
 /*************************************************************************
@@ -84,8 +90,8 @@ void gui_button(int xLeft, int yUp, int xRight, int yDown, pInt8U text, int text
 void gui_monitoringScreen(pAlgoDevice_t pDevices,int devLamps[])
 {
   // Menu options
-  settingsButtonState = 1; // Enable Settings
-  modeButtonState = 1; // Enable Mode
+  settingsButtonState = 0; // Enable Settings
+  modeButtonState = 0; // Enable Mode
   screen = 0; // Tracking screen, 0 = monitoring screen
   
   // Clear screen
@@ -100,37 +106,31 @@ void gui_monitoringScreen(pAlgoDevice_t pDevices,int devLamps[])
   GLCD_TextSetPos(0,0);
   GLCD_print("\f%s", headLine);
   
-  // Mode button
-  gui_button(0,190,80,239,"MODE",10,13,0x000000,0xff99ffff);
-  
-  // settings button
-  // gui_button(239,190,319,239,"Set",10,13,0x000000,0xff99ffff);
-  GLCD_LoadPic(259, 179, &button_settingsPic, 1); 
-  
   // device img 1
-  (devLamps[0]==1)? GLCD_LoadPic(28, 28, &lamp_onPic, 1):
-        GLCD_LoadPic(28, 28, &lamp_offPic, 1);  
-  GLCD_SetWindow(5,95,101,187);
+  (devLamps[0]==1)? GLCD_LoadPic(28, 59, &lamp_onPic, 1):
+        GLCD_LoadPic(28, 59, &lamp_offPic, 1);  
+  GLCD_SetWindow(5,136,101,228);
   GLCD_TextSetPos(0,0);
   GLCD_print("\fDev 1\n\rP: %f\n\rQ: %f\n\rH: 46W",(*pDevices).dP, 
              (*pDevices).dQ);
 
   // device img 2  
-  (devLamps[1]==1)? GLCD_LoadPic(134, 28, &lamp_onPic, 1):
-     GLCD_LoadPic(134, 28, &lamp_offPic, 1);
-  GLCD_SetWindow(111,95,207,187);
+  (devLamps[1]==1)? GLCD_LoadPic(134, 59, &lamp_onPic, 1):
+     GLCD_LoadPic(134, 59, &lamp_offPic, 1);
+  GLCD_SetWindow(111,136,207,228);
   GLCD_TextSetPos(0,0);
   GLCD_print("\fDev 2\n\rP: %f\n\rQ: %f\n\rH: 46W",(*(pDevices+1)).dP,
              (*(pDevices+1)).dQ);
 
   // device img 3
-  (devLamps[2]==1)?  GLCD_LoadPic(240, 28, &lamp_onPic, 1):
-     GLCD_LoadPic(240, 28, &lamp_offPic, 1);
+  (devLamps[2]==1)?  GLCD_LoadPic(240, 59, &lamp_onPic, 1):
+     GLCD_LoadPic(240, 59, &lamp_offPic, 1);
   
- 
+  // Back button
+  GLCD_LoadPic(0, 0, &button_backPic, 1);
  
   
-  GLCD_SetWindow(219,95,313,187);
+  GLCD_SetWindow(219,136,313,228);
   GLCD_TextSetPos(0,0);
 
 //    GLCD_print("\fDev 3\n\rP: %f\n\rQ: %f\n\rH: 46W",(*(pDevices+2)).dP,
@@ -151,8 +151,8 @@ void gui_monitoringScreen(pAlgoDevice_t pDevices,int devLamps[])
 void gui_learningScreen(void)
 {
   // Menu options
-  settingsButtonState = 1;
-  modeButtonState = 1;
+  settingsButtonState = 0;
+  modeButtonState = 0;
   screen = 1; // Tracking screen, 1 = learning screen
   
   // Clear screen
@@ -167,17 +167,6 @@ void gui_learningScreen(void)
   GLCD_TextSetPos(0,0);
   GLCD_print("\f%s", headLine);
   
-  if(modeButtonState)
-  {
-    // Mode button
-    gui_button(0,190,80,239,"MODE",10,13,0x000000,0xff99ffff);
-  }
-  
-  if(settingsButtonState)
-  {
-    // settings button
-    gui_button(239,190,319,239,"Set",10,13,0x000000,0xff99ffff);
-  }
   
   // Add Device
   gui_button(80,70,240,120,"Add Device",23,13,0x000000,0x0066ff66);
@@ -188,11 +177,13 @@ void gui_learningScreen(void)
     gui_button(80,130,240,180,"Delete All",23,13,0x000000,0x00ff9966);
   }
   
+  // Back button
+  GLCD_LoadPic(0, 0, &button_backPic, 1);
   
   gui_button(0,0,319,50,dataArray,0,0,0x000000,0x00ff9966);
 }
 /*************************************************************************
- * Function Name: gui_addDeviceScreen
+ * Function Name: gui_devicesScreen
  * Parameters: None
  *
  * Return: none
@@ -200,19 +191,19 @@ void gui_learningScreen(void)
  * Description: GUI add device (Learning mode)
  *
  *************************************************************************/
-void gui_addDeviceScreen(void)
+void gui_devicesScreen(void)
 {
   // Menu options
-  settingsButtonState = 1;
-  modeButtonState = 1;
+  settingsButtonState = 0;
+  modeButtonState = 0;
   backButtonState = 1;
-  screen = 2; // Tracking screen, 2 = Add Device screen
+  screen = 2; // 2 = Devies screen
   
   // Clear screen
   gui_clearScreen();
   
-  // Entering LEARNING MODE
-  strcpy(headLine, "Learning Mode");
+  // Entering Devices
+  strcpy(headLine, "Devices");
   
   // Set headline
   GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
@@ -220,23 +211,90 @@ void gui_addDeviceScreen(void)
   GLCD_TextSetPos(0,0);
   GLCD_print("\f%s", headLine);
   
-  // Display message
+    // Message
   GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
-  GLCD_SetWindow(50,30,270,99);
+  GLCD_SetWindow(85,100,235,123);
   GLCD_TextSetPos(0,0);
-  GLCD_print("\f%s", "Measuring Mean\n\r  Please Wait!");  
+  GLCD_print("\f%s", "Devices!!! :D");
+
+  // Back button
+  GLCD_LoadPic(0, 0, &button_backPic, 1);
+}
+/*************************************************************************
+ * Function Name: gui_serverScreen
+ * Parameters: None
+ *
+ * Return: none
+ *
+ * Description: GUI settings screen
+ *
+ *************************************************************************/
+void gui_serverScreen(void)
+{
+ // Menu options
+  settingsButtonState = 0;
+  modeButtonState = 0;
+  backButtonState = 1;
+  screen = 3; // 3 = Server screen
   
-  if(modeButtonState)
-  {
-    // Mode button
-    gui_button(0,190,80,239,"MODE",10,13,0x000000,0xff99ffff);
-  }
+  // Clear screen
+  gui_clearScreen();
   
-  if(settingsButtonState)
-  {
-    // settings button
-    gui_button(239,190,319,239,"Set",10,13,0x000000,0xff99ffff);
-  }
+  // Entering Seb Server Screen
+  strcpy(headLine, "Web Server");
+  
+  // Set headline
+  GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
+  GLCD_SetWindow(85,0,235,23);
+  GLCD_TextSetPos(0,0);
+  GLCD_print("\f%s", headLine);
+  
+  // Message
+  GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
+  GLCD_SetWindow(85,100,235,123);
+  GLCD_TextSetPos(0,0);
+  GLCD_print("\f%s", "Server info!!! :D");
+  
+  // Back button
+  GLCD_LoadPic(0, 0, &button_backPic, 1);
+}
+/*************************************************************************
+ * Function Name: gui_infoScreen
+ * Parameters: None
+ *
+ * Return: none
+ *
+ * Description: GUI settings screen
+ *
+ *************************************************************************/
+void gui_infoScreen(void)
+{
+ // Menu options
+  settingsButtonState = 0;
+  modeButtonState = 0;
+  backButtonState = 1;
+  screen = 4; // 4 = Info screen
+  
+  // Clear screen
+  gui_clearScreen();
+  
+  // Entering Information Screen
+  strcpy(headLine, "Information");
+  
+  // Set headline
+  GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
+  GLCD_SetWindow(85,0,235,23);
+  GLCD_TextSetPos(0,0);
+  GLCD_print("\f%s", headLine);
+  
+  // Message
+  GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
+  GLCD_SetWindow(85,100,235,123);
+  GLCD_TextSetPos(0,0);
+  GLCD_print("\f%s", "Info!!! :D");
+  
+  // Back button
+  GLCD_LoadPic(0, 0, &button_backPic, 1);
 }
 /*************************************************************************
  * Function Name: gui_settingsScreen
@@ -253,20 +311,31 @@ void gui_settingsScreen(void)
   settingsButtonState = 0;
   modeButtonState = 0;
   backButtonState = 1;
-  screen = 3; // Tracking screen, 3 = settings screen
+  screen = 5; // 5 = settings screen
   
-  // Display message
+  // Clear screen
+  gui_clearScreen();
+  
+  // Entering Settings screen
+  strcpy(headLine, "Settings");
+  
+  // Set headline
   GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
-  GLCD_SetWindow(50,30,270,99);
+  GLCD_SetWindow(85,0,235,23);
   GLCD_TextSetPos(0,0);
-  GLCD_print("\f%s", "Here is going\n\rto be settings...");  
+  GLCD_print("\f%s", headLine);
+  
+  // Message
+  GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
+  GLCD_SetWindow(85,100,235,123);
+  GLCD_TextSetPos(0,0);
+  GLCD_print("\f%s", "Settings!!! :D");
   
   // Back button
-  gui_button(0,190,80,239,"Back",10,13,0x000000,0xff99ffff);
-  
+  GLCD_LoadPic(0, 0, &button_backPic, 1);
 }
 /*************************************************************************
- * Function Name: gui_deleteDevicesScreen
+ * Function Name: gui_mainScreen
  * Parameters: None
  *
  * Return: none
@@ -274,21 +343,22 @@ void gui_settingsScreen(void)
  * Description: GUI settings screen
  *
  *************************************************************************/
-void gui_deleteDevicesScreen(void)
+void gui_mainScreen(void)
 {
   // Menu options
   settingsButtonState = 0;
   modeButtonState = 0;
   backButtonState = 1;
-  screen = 3; // Tracking screen, 3 = settings screen
+  screen = 9; // Main screen, 9 = settings screen
   
-  // Display message
-  GLCD_SetFont(&Terminal_18_24_12,0x000000,0xffffffff);
-  GLCD_SetWindow(50,30,270,99);
-  GLCD_TextSetPos(0,0);
-  GLCD_print("\f%s", "Here is going\n\rto be settings...");  
+  // Clear screen
+  gui_clearScreen();
   
-  // Mode button
-  gui_button(0,190,80,239,"Back",10,13,0x000000,0xfff99fff);
-  
+  // Main Menu Buttons
+  GLCD_LoadPic(59, 64, &button_monitorPic, 1); 
+  GLCD_LoadPic(129, 64, &button_learnPic, 1);
+  GLCD_LoadPic(199, 64, &button_devicesPic, 1); 
+  GLCD_LoadPic(59, 134, &button_serverPic, 1); 
+  GLCD_LoadPic(129, 134, &button_infoPic, 1); 
+  GLCD_LoadPic(199, 134, &button_settingsPic, 1); 
 }

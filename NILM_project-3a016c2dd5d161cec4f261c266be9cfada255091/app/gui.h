@@ -14,9 +14,11 @@ void gui_clearScreen(void);
 void gui_button(int xLeft, int yUp, int xRight, int yDown, pInt8U text, int textPosX, int textPosY, LdcPixel_t txtColor, LdcPixel_t backgroundColor);
 void gui_monitoringScreen(pAlgoDevice_t pDevices,int devLamps[]); // GUI monitoring screen
 void gui_learningScreen(void); // GUI learning screen
-void gui_addDeviceScreen(void); // GUI add device sceen
+void gui_devicesScreen(void); // GUI Devices sceen
 void gui_settingsScreen(void); // GUI Settings screen
-void gui_deleteDevicesScreen(void); // Delete Devices screen
+void gui_infoScreen(void); // GUI Information screen
+void gui_serverScreen(void); // GUI Server Screen
+void gui_mainScreen(void); // Main Screen
 
 // Application variables
 extern char headLine[20];
